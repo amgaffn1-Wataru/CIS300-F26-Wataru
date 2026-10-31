@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #f4f6f6;
+    color: #555555;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+}
+
+#wrapper {
+    background-color: #f4f6f6;
+}
+
+header {
+    background-color: #759999;
+    color: #433649;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 140%;
+    font-weight: 400;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 110%;
+    text-align: center;
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #f4f6f6;
+    padding: 1px 20px 20px 30px;
+    display: block;
+    overflow: auto;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    letter-spacing: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    color: #433649;
+    font-family: 'Lato', Arial, sans-serif;
+    text-shadow: .5px .5px .5px #edebeb;
+}
+
+h3 {
+    color: #000033;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+dt {
+    color: #433649;
+}
+
+.expecting {
+    color: #433649;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 70%;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+    padding: 2em;
+    background-color: #f4f6f6;
+}
+
+footer a {
+    color: #433649;
+}
+
+.home-side-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav li {
+    border-bottom: 1px solid #433649;
+    display: inline;
+}
+
+nav a:link {
+    color: #5C7FA3;
+}
+
+nav a:visited {
+    color: #72556c;
+}
+
+nav a:hover {
+    color: #668a8a;
+}
+
+header a:link, header a:visited {
+    color: #72556c;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #668a8a;
+}
+
+@media (min-width: 600px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    section {
+        margin-left: 2em;
+        margin-right: 2em;
+        flex: 1;
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    #wrapper {
+        margin: auto;
+        width: 90%;
+    }
+
+}
