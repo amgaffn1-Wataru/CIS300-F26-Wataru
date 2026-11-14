@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A shopping checklist for expecting parents, with a comparison of pack 'n plays, bassinets, and cribs and a form to request a personalized shopping list.">
+    <title>Expecting & Prepared :: Shopping Checklist</title>
+    <link rel="stylesheet" href="expecting.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <h1><a href="index.html">Expecting & Prepared</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shopping.html">Shopping Checklist</a></li>
+                <li><a href="hospital.html">Hospital Bag Checklist</a></li>
+                <li><a href="name.html">Baby Name Planning</a></li>
+                <li><a href="newborn.html">Newborn Guidance</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <h2>Shopping Checklist</h2>
+
+            <p>
+                Getting ready to welcome baby can mean a long list of things to buy, and it is common to feel unsure about where to start. This page will help you figure out what you really need, compare some of the bigger items you may purchase, and request a personalized shopping list made just for your family.
+            </p>
+
+            <h3>Choosing a Sleep Space</h3>
+
+            <p>
+                One of the first big decisions many parents face is where baby will sleep. Pack 'n plays, bassinets, and cribs all have their own strengths, so the right choice depends on your space, your budget, and how long you would like to use it. Here is a quick comparison to help you decide.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Pack 'n Play</th>
+                        <th>Bassinet</th>
+                        <th>Crib</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pros</th>
+                        <td>Easy for traveling, napping, and flexibility to move from room to room</td>
+                        <td>Easy to keep baby close to the caregiver's bed</td>
+                        <td>Long term arrangement and sleeping space</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cons</th>
+                        <td>Mattress is thin, more difficult for caregiver to reach in to grab child</td>
+                        <td>Baby will outgrow it quickly</td>
+                        <td>More expensive, not very portable</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Portability</th>
+                        <td>Can be folded up and easily moved around</td>
+                        <td>Fairly lightweight and easy to move from room to room</td>
+                        <td>Typically kept in one space once assembled</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">How long it can be used</th>
+                        <td>Newborn through toddler years</td>
+                        <td>Baby's first few months</td>
+                        <td>Newborn through toddler years; some convert to a toddler bed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Size</th>
+                        <td>Medium, but can be folded up to store</td>
+                        <td>Small and can fit in narrow areas</td>
+                        <td>Large, needs a dedicated space</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Price range</th>
+                        <td>$60 - $250</td>
+                        <td>$50 - $300</td>
+                        <td>$150 - $600, not counting mattress</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Get Your Personalized Shopping List</h3>
+
+            <p>
+                Every family's needs are slightly different. Tell us a bit about your unique situation, and we will create a shopping list that fits your timeline, your budget, and your home's needs. Required fields are marked with an asterisk *.
+            </p>
+
+            <form action="#">
+                <label for="dueDate">*Due date or expected arrival:</label>
+                <input type="date" id="dueDate" name="dueDate" required>
+
+                <fieldset>
+                    <legend>*Are you a first time or experienced parent?</legend>
+                    <label><input type="radio" name="parentType" value="first" required> First time parent</label>
+                    <label><input type="radio" name="parentType" value="experienced"> Experienced parent</label>
+                </fieldset>
+
+                <label for="budget">*What is your budget range for your shopping list?</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Select a range</option>
+                    <option value="under500">Under $500</option>
+                    <option value="500to1000">$500 - $1,000</option>
+                    <option value="1000to2000">$1,000 - $2,000</option>
+                    <option value="over2000">Over $2,000</option>
+                </select>
+
+                <label for="circumstances">Please explain the circumstances of your new arrival (twins, adopting, using hand-me-downs, description of living space, etc.):</label>
+                <textarea id="circumstances" name="circumstances" rows="5" cols="40"></textarea>
+
+                <label for="email">*Email address (where we will send your list):</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Get My Shopping List">
+            </form>
+
+        </main>
+
+        <footer>
+            Copyright &copy; 2026 Expecting & Prepared<br>
+            <a href="mailto:awataru@asu.edu">Alayna Wataru</a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

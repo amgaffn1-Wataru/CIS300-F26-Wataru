@@ -124,6 +124,98 @@ header a:hover {
     color: #668a8a;
 }
 
+/* Comparison table */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #759999;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+td, th {
+    padding: 0.75em;
+    border: 1px solid #759999;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #dbe6e6;
+    color: #433649;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+tr:nth-of-type(even) td {
+    background-color: #ffffff;
+}
+
+/* Shopping list form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 32em;
+}
+
+form label {
+    margin-bottom: 0.4em;
+}
+
+input, select, textarea {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 1.25em;
+    border: 1px solid #759999;
+    background-color: #ffffff;
+    color: #555555;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1.25em 0;
+}
+
+legend {
+    padding: 0;
+    margin-bottom: 0.4em;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 0.4em;
+}
+
+input[type="radio"] {
+    margin: 0 0.5em 0 0;
+}
+
+input[type="submit"] {
+    align-self: flex-start;
+    background-color: #759999;
+    color: #ffffff;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #433649;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #433649;
+    outline-offset: 1px;
+}
+
 @media (min-width: 600px) {
 
     nav ul {
